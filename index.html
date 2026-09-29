@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHEY ENTERTAINMENT — MCN TikTok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-ee">EE</span>
+                <span class="logo-text">EHEY<span>ENTERTAINMENT</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="creator.html">Anggota</a></li>
+                <li><a href="#" id="loginBtn" class="nav-login"><i class="fab fa-tiktok"></i> Login TikTok</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            ✨ Selamat Datang di EHEY ENTERTAINMENT — MCN TikTok Resmi & Terpercaya | Berbasis Gorontalo, Melayani Seluruh Indonesia | Bergabunglah & Tumbuh Bersama Kami 🚀
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="logo-bulat-berkedip">
+                <span>EE</span>
+            </div>
+            <h1>EHEY <span>ENTERTAINMENT</span></h1>
+            <p class="slogan">Jaringan Kreator TikTok Profesional</p>
+            <p class="sub">Bersama EHEY, Karya Kita Dikenal Dunia</p>
+            <div class="hero-buttons">
+                <a href="creator.html" class="btn-primary">
+                    <i class="fas fa-users"></i> Lihat Anggota
+                </a>
+                <button id="loginTiktokBtn" class="btn-tiktok">
+                    <i class="fab fa-tiktok"></i> Login Kit TikTok
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="staff">
+        <div class="container">
+            <h2 class="section-title">👑 Pengurus & Staff</h2>
+            <p class="section-desc">Tim yang mengelola & membimbing perkembangan EHEY ENTERTAINMENT</p>
+            <div class="profiles-grid" id="staffGrid"></div>
+        </div>
+    </section>
+
+    <section class="section bg-dark" id="daftar">
+        <div class="container daftar-box">
+            <h2 class="section-title white">📋 Mau Bergabung?</h2>
+            <p>Daftar sekarang dan jadilah bagian dari keluarga besar EHEY ENTERTAINMENT!</p>
+            <div class="daftar-opsi">
+                <div class="opsi-card">
+                    <h3><i class="fab fa-tiktok"></i> Pakai Akun TikTok</h3>
+                    <p>Login langsung, data profil otomatis terisi</p>
+                    <button id="daftarTiktok" class="btn-tiktok">
+                        <i class="fab fa-tiktok"></i> Daftar via TikTok
+                    </button>
+                </div>
+                <div class="opsi-card">
+                    <h3><i class="fas fa-edit"></i> Isi Manual</h3>
+                    <p>Kirim data lewat WhatsApp Admin</p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20ingin%20mendaftar%20menjadi%20anggota%20EHEY%20ENTERTAINMENT%0A%0ANama%3A%0AUsername%20TikTok%3A%0ATautan%20Profil%3A" target="_blank" class="btn-wa">
+                        <i class="fab fa-whatsapp"></i> Daftar via WhatsApp
+                    </a>
+                </div>
+            </div>
+            <p class="teks-kecil">
+                Dengan mendaftar, Anda menyetujui 
+                <a href="syarat.html" target="_blank">Syarat & Ketentuan</a> dan 
+                <a href="privasi.html" target="_blank">Kebijakan Privasi</a>.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="profilPengguna" style="display:none;">
+        <div class="container profil-box">
+            <h2 class="section-title">👤 Profil Anda</h2>
+            <div class="profil-diri">
+                <img id="profilFoto" src="" alt="Foto Profil">
+                <h3 id="profilNama">-</h3>
+                <p>@<span id="profilUsername">-</span></p>
+                <a id="profilTautan" href="" target="_blank" class="btn-tiktok">
+                    <i class="fab fa-tiktok"></i> Buka Profil TikTok
+                </a>
+                <button id="keluarBtn" class="btn-keluar">
+                    <i class="fas fa-sign-out-alt"></i> Keluar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EHEY ENTERTAINMENT — Gorontalo, Indonesia</p>
+        <p class="motto">"Bersama EHEY, Karya Kita Dikenal Dunia."</p>
+        <p class="footer-links">
+            <a href="syarat.html">Syarat & Ketentuan</a> | 
+            <a href="privasi.html">Kebijakan Privasi</a>
+        </p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-konten">
+            <span class="tutup">&times;</span>
+            <h3><i class="fab fa-tiktok"></i> Login Kit TikTok</h3>
+            <p>Masukkan data akun Anda</p>
+            <form id="formLogin">
+                <label>Foto Profil (URL):</label>
+                <input type="url" id="loginFoto" required>
+                <label>Nama Lengkap:</label>
+                <input type="text" id="loginNama" required>
+                <label>Username TikTok:</label>
+                <input type="text" id="loginUser" required>
+                <label>Tautan Profil TikTok:</label>
+                <input type="url" id="loginTautan" required>
+                <button type="submit" class="btn-tiktok">
+                    <i class="fab fa-tiktok"></i> Masuk & Simpan
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
